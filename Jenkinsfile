@@ -6,6 +6,11 @@ theMultiPipeline(
             _defaults: 'base',
             project: 'web',
             stages: [
+                build: [
+                    steps: [
+                        'docker-compose up -d'
+                    ]
+                ],
                 dockerise: [
                     steps: [
                         'echo "No need to dockerise"'
