@@ -6,23 +6,23 @@ theMultiPipeline(
             _defaults: 'base',
             project: 'web',
             stages: [
-6               dockerise: [
-7                   steps: [
-8                       'echo "No need to dockerise"'
-9                   ]
-10              ]
-            ]
+6            build: [
+7                steps: [
+8                    'echo "No build required"'
+9                ]
+10            ]
+11        ]
         ],
         server: [
             _defaults: 'base',
             project: 'web',
             stages: [
-6               dockerise: [
-7                   steps: [
-8                       'echo "No need to dockerise"'
-9                   ]
-10              ]
-            ]
+6            build: [
+7                steps: [
+8                    'echo "No build required"'
+9                ]
+10            ]
+11        ]
         ]
     ]
 )
