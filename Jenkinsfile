@@ -5,10 +5,20 @@ theMultiPipeline(
         client: [
             _defaults: 'base',
             project: 'web',
+            services: [
+                name: [
+                  'main'
+                ]
+                image: [
+                   'cimg/base:2021.04'
+                ]
+                tty: [
+                    'true'
+                ]
             stages: [
-                build: [
+                test: [
                     steps: [
-                        'docker-compose up -d'
+                        'docker-compose run web python3 manage.py test'
                     ]
                 ],
                 dockerise: [
