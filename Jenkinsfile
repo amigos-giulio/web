@@ -4,19 +4,22 @@ theMultiPipeline(
     folders: [
         client: [
             _defaults: 'base',
-            project: 'simple-project-multi-client'
-            dockerise: [
-                steps: [
-                    'echo "No need to dockerise"'
+            project: 'simple-project-multi-client',
+            stages: [
+                dockerise: [
+                    steps: [
+                        'echo "No need to dockerise"'
+                    ]
                 ]
-            ]
-        ],
+            ],
         server: [
             _defaults: 'base',
-            project: 'simple-project-multi-server'
-            dockerise: [
-                steps: [
-                    'echo "No need to dockerise"'
+            project: 'simple-project-multi-server',
+            stages: [
+                dockerise: [
+                    steps: [
+                        'echo "No need to dockerise"'
+                    ]
                 ]
             ]
         ]
