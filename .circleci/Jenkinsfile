@@ -4,7 +4,7 @@ theMultiPipeline(
     folders: [
         client: [
             _defaults: 'base',
-            project: 'simple-project-multi-client'
+            project: 'simple-project-multi-client',
             stages: [
                 dockerise: [
                     steps: [
@@ -15,7 +15,7 @@ theMultiPipeline(
         ],
         server: [
             _defaults: 'base',
-            project: 'simple-project-multi-server'
+            project: 'simple-project-multi-server',
             stages: [
                 dockerise: [
                     steps: [
