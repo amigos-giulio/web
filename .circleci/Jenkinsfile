@@ -5,10 +5,20 @@ theMultiPipeline(
         client: [
             _defaults: 'base',
             project: 'simple-project-multi-client'
+            dockerise: [
+                steps: [
+                    'echo "No need to dockerise"'
+                ]
+            ]
         ],
         server: [
             _defaults: 'base',
             project: 'simple-project-multi-server'
+            dockerise: [
+                steps: [
+                    'echo "No need to dockerise"'
+                ]
+            ]
         ]
     ]
 )
