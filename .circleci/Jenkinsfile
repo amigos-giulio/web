@@ -1,0 +1,14 @@
+@Library('jenkins-shared-library@feature/giulio-testing') _
+
+theMultiPipeline(
+    folders: [
+        client: [
+            _defaults: 'base',
+            project: 'simple-project-multi-client'
+        ],
+        server: [
+            _defaults: 'base',
+            project: 'simple-project-multi-server'
+        ]
+    ]
+)
